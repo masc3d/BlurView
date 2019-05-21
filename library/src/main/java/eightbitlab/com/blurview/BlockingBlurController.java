@@ -25,7 +25,7 @@ import android.view.ViewTreeObserver;
  * <p>
  * Blur is done on the main thread.
  */
-final class BlockingBlurController implements BlurController {
+public final class BlockingBlurController implements BlurController {
 
     //Bitmap size should be divisible by 16 to meet stride requirement
     private static final int ROUNDING_VALUE = 16;

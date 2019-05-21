@@ -46,6 +46,10 @@ public class BlurView extends FrameLayout {
         a.recycle();
     }
 
+    public BlurController getController() {
+        return blurController;
+    }
+
     @Override
     public void draw(Canvas canvas) {
         blurController.draw(canvas);
