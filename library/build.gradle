@@ -89,7 +89,7 @@ bintray {
     key = System.getenv('BINTRAY_API_KEY')
     dryRun = false
     override = false
-    publish = true
+    publish = false
     pkg {
         repo = 'maven'
         name = 'BlurView'
