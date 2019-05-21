@@ -281,12 +281,7 @@ public final class BlockingBlurController implements BlurController {
 
     @Override
     public BlurViewFacade setBlurEnabled(final boolean enabled) {
-        blurView.post(new Runnable() {
-            @Override
-            public void run() {
-                setBlurEnabledInternal(enabled);
-            }
-        });
+        setBlurEnabledInternal(enabled);
         return this;
     }
 
@@ -299,12 +294,7 @@ public final class BlockingBlurController implements BlurController {
     }
 
     public BlurViewFacade setBlurAutoUpdate(final boolean enabled) {
-        blurView.post(new Runnable() {
-            @Override
-            public void run() {
-                setBlurAutoUpdateInternal(enabled);
-            }
-        });
+        setBlurAutoUpdateInternal(enabled);
         return this;
     }
 
